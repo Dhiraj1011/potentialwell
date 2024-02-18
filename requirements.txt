@@ -1,18 +1,4 @@
 
-future                    0.18.3
-gitdb                     4.0.11
-GitPython                 3.1.41
-importlib-metadata        4.6.3
-ipython                   8.18.1
-ipywidgets                8.1.2
-itsdangerous              1.1.0
-jupyterlab_widgets        3.0.10
-lightkurve                2.4.0
-markdown-it-py            3.0.0
 matplotlib                3.4.2
-matplotlib-inline         0.1.6
 numpy                     1.26.4
-pandas                    1.5.3
-pip                       24.0
 streamlit                 1.31.0
-virtualenv                20.25.0
