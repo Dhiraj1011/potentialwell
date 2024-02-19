@@ -6,7 +6,7 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
-a=4
+a=st.number_input('Enter')
 x=np.linspace(-a,a,10000)
 
 def psi(x, n):
