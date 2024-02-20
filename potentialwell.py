@@ -16,7 +16,6 @@ def psi(x, n):
 n=st.number_input('Enter the state')
 st.text(n)
 plt.plot(x,(psi(x,n))**2,'--',label=rf'$\psi_{n}$')
-
 plt.ylabel('$\psi(x)^2$')
 plt.xlabel('x')
 plt.xlim(0,a)
