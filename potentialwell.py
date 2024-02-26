@@ -7,7 +7,7 @@ st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
 a=st.slider('Enter the length of well',1,20)
-x=np.linspace(0,a,10000)
+x=np.linspace(-a,a,10000)
 
 def psi(x, n):
     y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
