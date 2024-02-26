@@ -64,8 +64,8 @@ if options=='Both':
     plt.xlabel('x')
     plt.xlim(0,a)
     plt.ylim(bottom=0)
-    plt.savefig('graph.jpg')
-    st.image('graph.jpg')
+    #plt.savefig('graph.jpg')
+    #st.image('graph.jpg')
 
     plt.subplot(4,1,3)
     plt.plot(x,(psi1(x,n)))
