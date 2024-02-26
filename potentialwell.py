@@ -24,6 +24,7 @@ def psi1(x, n):
     
 def psi2(x,n):
     y2=np.sqrt(2 / a) * np.cos((n * np.pi * x) / (a))
+    return y2
     
 options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","Both",])
 if options=='Asymmetric Potential Well':
