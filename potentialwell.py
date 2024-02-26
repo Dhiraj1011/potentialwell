@@ -85,8 +85,8 @@ if options=='Both':
     plt.xlabel('x')
     plt.xlim(0,a)
     plt.ylim(bottom=0)
-    plt.savefig('graph.jpg')
-    st.image('graph.jpg')
+    #plt.savefig('graph.jpg')
+    #st.image('graph.jpg')
 
     plt.subplot(2,1,1)
     plt.plot(x,(psi1(x,n)))
@@ -101,8 +101,8 @@ if options=='Both':
     plt.axvline(0,color='black')
     plt.ylim(bottom=0)
     #plt.tight_layout()
-    plt.savefig('graph1.jpg')
-    st.image('graph1.jpg')
+    #plt.savefig('graph1.jpg')
+    #st.image('graph1.jpg')
 
     plt.subplot(2,1,1)
     plt.plot(x,(psi2(x,n)))
