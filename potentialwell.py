@@ -49,7 +49,7 @@ plt.ylim(bottom=0)
 plt.savefig('graph1.jpg')
 st.image('graph1.jpg')
 """
-options = st.radio('choose type of well',"Asymmetric Potential Well","Symmetric Potential Well")
+options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well"])
 if options=='Asymmetric Potential Well':
     plt.subplot(2,1,1)
     plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
