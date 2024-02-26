@@ -81,7 +81,7 @@ if options=='Symmetric Potential Well':
     plt.savefig('graph1.jpg')
     st.image('graph1.jpg')
 
-if options=='both':
+if options=='Both':
     plt.subplot(2,1,1)
     plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
     plt.xlim(0,a)
