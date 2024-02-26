@@ -34,7 +34,7 @@ def psi1(x, n):
 
 plt.subplot(2,1,1)
 plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
-plt.xlim(0,a)
+plt.xlim(-a,a)
 plt.axhline(0,color='black')
 plt.subplot(2,1,2)
 plt.plot(x,(psi(x,n))**2,label=rf'$\psi_{n}$')
