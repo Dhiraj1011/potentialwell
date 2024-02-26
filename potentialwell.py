@@ -79,7 +79,6 @@ if options=='Both':
     plt.xlim(-a,a)
     plt.axvline(0,color='black')
     plt.ylim(bottom=0)
-    fig.tight_layout()
     plt.savefig('graph1.jpg')
     st.image('graph1.jpg')
     
