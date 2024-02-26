@@ -28,5 +28,3 @@ plt.ylim(bottom=0)
 plt.savefig('graph.jpg')
 st.image('graph.jpg')
 
-
-
