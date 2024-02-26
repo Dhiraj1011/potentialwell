@@ -6,16 +6,16 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
+st.caption("In this site we are going to see the graphical representation of 1d pot well")
 a=st.slider('Enter the length of well',1,20)
 x=np.linspace(-a,a,10000)
-
-def psi(x, n):
-    y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
-    return y
 
 n=st.slider('Enter the state',1,100)
 st.text(n)
 
+def psi(x, n):
+    y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
+    return y
 
 def psi1(x, n):
     y1 = np.sqrt(1 / (a)) * np.sin((n * np.pi * x) / (a))
