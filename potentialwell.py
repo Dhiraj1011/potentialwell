@@ -18,7 +18,7 @@ st.text(n)
 
 
 def psi1(x, n):
-    y1 = np.sqrt(1 / (a)) * np.sin((n * np.pi * x) / (a))
+    y1 = np.sqrt(1 / (a)) * np.sin((n * np.pi * x) / (2*a))
     return y1
 
 options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Both"])
