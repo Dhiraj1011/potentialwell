@@ -55,7 +55,7 @@ if options=='Symmetric Potential Well':
 if options=='Both':
     
     plt.subplot(2,1,1)
-    plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
+    plt.plot(x,(psi(x,n)))
     plt.xlim(0,a)
     plt.axhline(0,color='black')
     plt.subplot(2,1,2)
@@ -64,8 +64,8 @@ if options=='Both':
     plt.xlabel('x')
     plt.xlim(0,a)
     plt.ylim(bottom=0)
-    #plt.savefig('graph.jpg')
-    #st.image('graph.jpg')
+    plt.savefig('graph.jpg')
+    st.image('graph.jpg')
 
     plt.subplot(2,1,1)
     plt.plot(x,(psi1(x,n)))
@@ -73,7 +73,7 @@ if options=='Both':
     plt.axhline(0,color='black')
     plt.axvline(0,color='black')
     plt.subplot(2,1,2)
-    plt.plot(x,(psi1(x,n))**2,label=rf'$\psi_{n}$')
+    plt.plot(x,(psi1(x,n))**2)
     plt.ylabel('$\psi1(x)^2$')
     plt.xlabel('x')
     plt.xlim(-a,a)
