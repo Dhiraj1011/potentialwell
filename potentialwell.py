@@ -69,6 +69,23 @@ if options=='Both':
     st.image('graph.jpg')
 
     plt.subplot(2,1,1)
+    plt.plot(x,(psi1(x,n)),label=rf'$\psi_{n}$')
+    plt.xlim(-a,a)
+    plt.axhline(0,color='black')
+    plt.axhline(0,color='black')
+    plt.axvline(0,color='black')
+    plt.subplot(2,1,2)
+    plt.plot(x,(psi1(x,n))**2,label=rf'$\psi_{n}$')
+    plt.ylabel('$\psi1(x)^2$')
+    plt.xlabel('x')
+    plt.xlim(-a,a)
+    plt.axvline(0,color='black')
+    plt.ylim(bottom=0)
+    plt.savefig('graph1.jpg')
+    st.image('graph1.jpg')
+    
+    """
+    plt.subplot(2,1,1)
     plt.plot(x,(psi1(x,n)))
     plt.xlim(-a,a)
     plt.axhline(0,color='black')
@@ -82,3 +99,4 @@ if options=='Both':
     plt.ylim(bottom=0)
     plt.savefig('graph1.jpg')
     st.image('graph1.jpg')
+    """
