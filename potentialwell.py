@@ -26,12 +26,12 @@ def psi2(x,n):
     
 options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","Both",])
 if options=='Asymmetric Potential Well':
-    plt.subplot(1,2,1)
-    plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
+    plt.subplot(2,1,1)
+    plt.plot(x,(psi(x,n)))
     plt.xlim(0,a)
     plt.axhline(0,color='black')
-    plt.subplot(1,2,2)
-    plt.plot(x,(psi(x,n))**2,label=rf'$\psi_{n}$')
+    plt.subplot(2,1,2)
+    plt.plot(x,(psi(x,n))**2)
     plt.ylabel('$\psi(x)^2$')
     plt.xlabel('x')
     plt.xlim(0,a)
@@ -41,12 +41,12 @@ if options=='Asymmetric Potential Well':
 
 if options=='Symmetric Potential Well':
     plt.subplot(2,1,1)
-    plt.plot(x,(psi1(x,n)),label=rf'$\psi_{n}$')
+    plt.plot(x,(psi1(x,n)))
     plt.xlim(-a,a)
     plt.axhline(0,color='black')
     plt.axvline(0,color='black')
     plt.subplot(2,1,2)
-    plt.plot(x,(psi1(x,n))**2,label=rf'$\psi_{n}$')
+    plt.plot(x,(psi1(x,n))**2)
     plt.ylabel('$\psi1(x)^2$')
     plt.xlabel('x')
     plt.xlim(-a,a)
