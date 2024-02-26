@@ -7,11 +7,11 @@ st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
 st.text("In this site we are going to see the graphical representation of 1d pot well")
+
 a=st.slider('Enter the length of well',1,20)
 x=np.linspace(-a,a,10000)
 
 n=st.slider('Enter the state',1,100)
-st.text(n)
 
 def psi(x, n):
     y = np.sqrt(2 / a) * np.sin((n * np.pi * x) / (a))
@@ -20,14 +20,17 @@ def psi(x, n):
 def psi1(x, n):
     y1 = np.sqrt(1 / (a)) * np.sin((n * np.pi * x) / (a))
     return y1
-
-options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Both"])
+    
+def psi2(x,n):
+    y2=np.sqrt(2 / a) * np.cos((n * np.pi * x) / (a))
+    
+options = st.radio('choose type of well',["Asymmetric Potential Well","Symmetric Potential Well","Potential well with length 2a","Both",])
 if options=='Asymmetric Potential Well':
-    plt.subplot(2,1,1)
+    plt.subplot(1,2,1)
     plt.plot(x,(psi(x,n)),label=rf'$\psi_{n}$')
     plt.xlim(0,a)
     plt.axhline(0,color='black')
-    plt.subplot(2,1,2)
+    plt.subplot(1,2,2)
     plt.plot(x,(psi(x,n))**2,label=rf'$\psi_{n}$')
     plt.ylabel('$\psi(x)^2$')
     plt.xlabel('x')
