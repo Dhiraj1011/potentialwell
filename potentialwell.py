@@ -15,6 +15,9 @@ def psi(x, n):
 
 n=st.slider('Enter the state',1,100)
 st.text(n)
+plt.subplot(1,2,1)
+plt.plot(x,(psi(x,n)))
+plt.subplot(1,2,2)
 plt.plot(x,(psi(x,n))**2,'--',label=rf'$\psi_{n}$')
 plt.ylabel('$\psi(x)^2$')
 plt.xlabel('x')
