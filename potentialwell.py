@@ -72,7 +72,7 @@ if options=='Both':
     plt.xlim(-a,a)
     plt.axhline(0,color='black')
     plt.axvline(0,color='black')
-    plt.subplot(2,1,4)
+    plt.subplot(4,1,4)
     plt.plot(x,(psi1(x,n))**2,label=rf'$\psi_{n}$')
     plt.ylabel('$\psi1(x)^2$')
     plt.xlabel('x')
