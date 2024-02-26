@@ -6,7 +6,7 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
-st.subheader("In this site we are going to see the graphical representation of 1d pot well")
+st.text("In this site we are going to see the graphical representation of 1d pot well")
 a=st.slider('Enter the length of well',1,20)
 x=np.linspace(-a,a,10000)
 
