@@ -6,8 +6,8 @@ import streamlit as st
 st.title('Quantum Mechanics')
 st.header('1-D Potential Well',divider='rainbow')
 
-st.caption("A particle in a 1-dimensional box is a fundamental quantum mechanical approximation describing the translational motion of a single particle confined inside an infinitely deep well from which it cannot escape.")
-st.caption("The potential energy is 0 inside the box (V=0 for 0<x<L) and goes to infinity at the walls of the box (V=∞ for x<0 or x>L).")
+st.subheader("A particle in a 1-dimensional box is a fundamental quantum mechanical approximation describing the translational motion of a single particle confined inside an infinitely deep well from which it cannot escape.")
+st.subheader("The potential energy is 0 inside the box (V=0 for 0<x<L) and goes to infinity at the walls of the box (V=∞ for x<0 or x>L).")
 a=st.slider('Enter the length of well',1,20)
 x=np.linspace(-a,a,10000)
 
